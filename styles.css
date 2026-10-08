@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 20px;
+}
+
+.test-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+.test-container h1 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 25px;
+    font-size: 1.7rem;
+}
+
+#sampleText {
+    background: #f1f5f9;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 20px;
+    border-left: 5px solid #38bdf8;
+}
+
+#typingArea {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.05rem;
+    font-family: inherit;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    resize: none;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease;
+}
+
+#typingArea:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+#restartBtn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: #38bdf8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#restartBtn:hover {
+    background: #0ea5e9;
+}
+
+#restartBtn:active {
+    transform: scale(0.98);
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.results p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-align: center;
+    flex: 1;
+}
+
+.results span {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-top: 4px;
+}
